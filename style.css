@@ -673,16 +673,16 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.7rem;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -701,12 +701,21 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 22px;
     line-height: 1.4em;
+    padding: 0 2rem;
+}
+
+.h2_ital {
+    font-style: italic;
+    max-width: 600px;
 }
 
 h3 {
@@ -718,14 +727,11 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
-
+h1,
 h4 {
     color: #333333!important;
 }
@@ -754,7 +760,7 @@ h4 {
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    padding: 3rem 0;
 }
 
 .bold-link {
@@ -824,6 +830,8 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
+
+/* ---------------------- RESPONSIVE ---------------------- */
 
 @media (max-width: 1024px) {
     .bloc {
@@ -895,7 +903,6 @@ h4 {
         position: relative;
     }
     h1,
-    h2,
     h3,
     h4,
     h5,
@@ -905,6 +912,11 @@ h4 {
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
+
+    .padding-bottom {
+        padding-bottom: 4.5rem;
+    }
+    
     .b-parallax {
         background-attachment: scroll;
     }
@@ -917,12 +929,14 @@ h4 {
         margin-left: 0;
         margin-right: 0;
     }
-    /* .site-navigation {
+
+    .site-navigation {
         position: inherit;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
-    } */
+    }
+    
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -1026,17 +1040,17 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .med-width-whitespace {
+        max-width: 400px;
+    }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }
