@@ -6,6 +6,14 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.logo {
+    height: 40px;
+    padding-left: 15px;
+}
+
+.image-resize-mode {
+    width: 100px;
+}
 
 a,
 button {
@@ -14,7 +22,6 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -331,6 +338,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    text-decoration: underline;
 }
 
 .navbar-toggle {
@@ -528,6 +536,12 @@ a[data-lightbox] {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    a[data-lightbox] {
+        max-width: 270px;
+    }
+}
+
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
@@ -643,6 +657,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
+    margin: auto;
 }
 
 .container {
@@ -696,6 +711,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto;
+    padding-top: 10px;
 }
 
 h2 {
@@ -707,9 +723,11 @@ h2 {
     padding: 0 2rem;
 }
 
-.h2_ital {
+blockquote {
     font-style: italic;
     max-width: 600px;
+    font-weight: 500;
+    margin: auto;
 }
 
 h3 {
@@ -736,8 +754,13 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF;
+    color: #FFFFFF!important;
     z-index: 999;
+}
+
+.black {
+    color: black;
+    opacity: 0.7;
 }
 
 .portfolio-thumb {
@@ -746,6 +769,10 @@ h4 {
 
 .portfolio-row {
     margin-bottom: 44px;
+}
+
+.img-responsive {
+    max-width: 500px;
 }
 
 .avatar {
@@ -780,7 +807,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -1016,7 +1043,7 @@ h4 {
         margin-top: 20px;
     }
     .voffset-lg {
-        margin-top: 50px;
+        margin-top: 30px;
     }
     form {
         padding: 5px;
