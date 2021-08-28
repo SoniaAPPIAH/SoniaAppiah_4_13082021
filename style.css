@@ -45,7 +45,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px;
 }
 
 .bloc-md {
@@ -643,7 +643,6 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
 }
 
 .container {
@@ -737,7 +736,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
+    z-index: 999;
 }
 
 .portfolio-thumb {
@@ -746,7 +746,6 @@ h4 {
 
 .portfolio-row {
     margin-bottom: 44px;
-    margin-top: 50px;
 }
 
 .avatar {
