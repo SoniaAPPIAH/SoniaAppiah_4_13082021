@@ -269,7 +269,7 @@ a:hover {
 }
 
 .voffset-lg {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .row-no-gutters {
@@ -281,10 +281,6 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
-}
-
-#bloc-1-hero h1 {
-    font-size: 32px;
 }
 
 .navbar {
@@ -655,11 +651,8 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
-}
-
-.hero-bloc-text-sub {
-    font-size: 36px;
+    font-size: 4.5rem;
+    font-weight: 700;
 }
 
 .statement-bloc-text {
@@ -672,6 +665,11 @@ a {
     margin: auto;
 }
 
+.baseline {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
 p {
     font-size: 1.7rem;
 }
@@ -682,7 +680,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 4rem;
     font-family: "Open Sans";
 }
 
@@ -1019,7 +1017,7 @@ h4 {
         margin-top: 20px;
     }
     .voffset-lg {
-        margin-top: 30px;
+        margin-top: 50px;
     }
     form {
         padding: 5px;
