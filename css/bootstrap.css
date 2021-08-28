@@ -3225,7 +3225,21 @@ input[type=search] {
 }
 
 .form-group {
-    margin-bottom: 15px
+    margin: 0 15px 15px 15px;
+}
+
+.form-group:nth-child(4){
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .form-group {
+        max-width: 300px;
+    }
+
+    .form-group:nth-child(4){
+        max-width: 600px;
+    }
 }
 
 .checkbox,
@@ -4224,17 +4238,23 @@ fieldset[disabled] .btn-link:hover {
 
 .btn-block {
     display: block;
-    width: 100%
+    width: clamp(85%, 95%, 95%);
+}
+
+@media (max-width: 767px) {
+    .btn-block {
+        max-width: 300px;
+    }
 }
 
 .btn-block+.btn-block {
-    margin-top: 5px
+    margin-top: 5px;
 }
 
 input[type=button].btn-block,
 input[type=reset].btn-block,
 input[type=submit].btn-block {
-    width: 100%
+    width: 100%;
 }
 
 .fade {
@@ -7861,7 +7881,8 @@ button.close {
 }
 
 @media (max-width:767px) {
-    .visible-xs {
+    .visible-xs,
+    .visible-xs-block {
         display: block !important
     }
     table.visible-xs {
@@ -7874,25 +7895,17 @@ button.close {
     th.visible-xs {
         display: table-cell !important
     }
-}
-
-@media (max-width:767px) {
-    .visible-xs-block {
-        display: block !important
-    }
-}
-
-@media (max-width:767px) {
     .visible-xs-inline {
         display: inline !important
     }
-}
-
-@media (max-width:767px) {
     .visible-xs-inline-block {
         display: inline-block !important
     }
+    .hidden-xs {
+        display: none !important
+    }
 }
+
 
 @media (min-width:768px) and (max-width:991px) {
     .visible-sm {
@@ -7996,11 +8009,6 @@ button.close {
     }
 }
 
-@media (max-width:767px) {
-    .hidden-xs {
-        display: none !important
-    }
-}
 
 @media (min-width:768px) and (max-width:991px) {
     .hidden-sm {
