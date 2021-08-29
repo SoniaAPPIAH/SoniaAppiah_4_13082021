@@ -712,6 +712,15 @@ p {
     max-width: 400px;
     margin: auto;
     padding-top: 10px;
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    padding-top: 10px;
 }
 
 h2 {
@@ -845,11 +854,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.jp2");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jp2");
 }
 
 /* ---------------------- RESPONSIVE ---------------------- */
